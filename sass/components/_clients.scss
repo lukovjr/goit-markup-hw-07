@@ -1,0 +1,32 @@
+.clients {
+    padding-bottom: 94px;
+    padding-top: 94px;
+}
+
+.client-list {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.client-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    color: #afb1b8;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    transition: color var(--amimhover), border-color var(--amimhover);
+    &:hover,
+        &:focus {
+            border-color: var(--main-blue);
+            color: var(--main-blue);
+        }
+}
+
+.client-icon {
+    fill: currentColor;
+}
+

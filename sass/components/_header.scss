@@ -1,0 +1,111 @@
+.flex-header {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-right: 93px;
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--full-dark);
+}
+
+.web {
+    color: var(--main-blue);
+}
+
+.page-header {
+    background-color: var(--main-light);
+    border-bottom: 1px solid #ececec;
+}
+
+.page-nav {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--text-title-dark);
+}
+
+.list-nav {
+    color: var(--text-title-dark);
+    display: flex;
+    & .nav-item:not(:last-child) {
+            margin-right: 50px;
+        }
+                & .current::after {
+                    content: "";
+                    position: absolute;
+                    left: 0px;
+                    bottom: 0px;
+                    border-radius: 2px;
+                    width: 100%;
+                    height: 4px;
+                    background-color: var(--main-blue);
+                }
+}
+
+
+
+.list-nav .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.list-nav a {
+    color: var(--text-title-dark);
+}
+
+.list-cont {
+    color: var(--text);
+    display: flex;
+    gap: 50px;
+    margin-left: auto;
+}
+
+.icons-contacts {
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+.list-cont .link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.studio-tel,
+.studio-mail {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    color: var(--text);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    align-items: center;
+    &:hover,
+        &:focus,
+        &:hover,
+        &:focus {
+            fill: var(--main-blue);
+        }
+}
+
+
+.mouse-link {
+    position: relative;
+    transition: color var(--amimhover);
+    &:hover,
+        &:focus {
+            color: var(--main-blue);
+        }
+}
+
