@@ -1,6 +1,5 @@
 .specials {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    @include sectionpadding;
 }
 
 .advantage {
@@ -8,14 +7,12 @@
     gap: 30px;
 }
 
-.advantage-item {
+.advantage__item {
     width: 270px;
 }
 
-.icons {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.advantage__icons {
+    @include flexcentered;
     width: 270px;
     height: 120px;
     background: var(--btn-fltr-back);
@@ -23,11 +20,11 @@
     margin-bottom: 30px;
 }
 
-.icon-advantages {
+.advantage__icon-advantages {
     fill: currentColor;
 }
 
-.advantage-title {
+.advantage__title {
     margin-bottom: 10px;
     font-weight: 700;
     font-size: 14px;
@@ -37,7 +34,7 @@
     color: var(--text-title-dark);
 }
 
-.advantage-text {
+.advantage__text {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;

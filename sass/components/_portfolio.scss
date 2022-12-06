@@ -1,13 +1,10 @@
 .portfolio {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    @include sectionpadding;
 }
 
 .button-filtr {
-    display: flex;
-    align-items: center;
+    @include flexcentered;
     gap: 8px;
-    justify-content: center;
     margin-bottom: 50px;
 }
 

@@ -1,0 +1,10 @@
+@mixin flexcentered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin sectionpadding {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}

@@ -73,9 +73,7 @@
 }
 
 .list-cont .link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flexcentered;
     padding-top: 32px;
     padding-bottom: 32px;
 }

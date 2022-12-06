@@ -1,20 +1,18 @@
-.we-do-thumb {
+.our-work__thumb {
     position: relative;
 }
 
-.we-do-overlay {
+.our-work__overlay {
     position: absolute;
     left: 0%;
     bottom: 0%;
-    align-items: center;
-    justify-content: center;
-    display: flex;
+    @include flexcentered;
     width: 100%;
     height: 70px;
     background: rgba(47, 48, 58, 0.8);
 }
 
-.we-do-overlay-title {
+.our-work__overlay-title {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -30,6 +28,6 @@
     gap: 30px;
 }
 
-.our-work-item {
+.our-work__item {
     width: calc((100% - 60px) / 3);
 }
